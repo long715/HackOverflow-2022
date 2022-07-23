@@ -12,23 +12,11 @@ body {
 	  monospace;
   }
 
-  /* .to-do {
-	cursor: pointer;
-  }
-
-  .to-do:complete{
-	background-color: black;
-	cursor: pointer;
-	text-decoration: line-through;
-  } */
-
   .checkList{
 	display: flex;
 	flex-direction: column;
 	background-color: aliceblue;
+	flex-basis: 22rem;
+	padding: 1rem;
   }
 
-  /* .strike {
-	text-decoration: line-through;
-  }
-   */

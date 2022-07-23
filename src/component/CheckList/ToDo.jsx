@@ -1,7 +1,7 @@
 import React from 'react';
 import checklistStyle from './checklistStyle.css';
 
-//one row in out todo list 
+//each row in out todo list 
 const ToDo = ({todo, handleToggle}) => {
 
     const handleClick = (e) => {
