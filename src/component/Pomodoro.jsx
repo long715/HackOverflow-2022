@@ -1,11 +1,16 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import pomodoroStyle from "./pomodoro.css";
 
 function Pomodoro() {
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(10);
+  const startTimerMins = 0;
+  const startTimerSecs = 5;
+  const startBreakMins = 0;
+  const startBreakSecs = 3;
+  const [minutes, setMinutes] = useState(startTimerMins);
+  const [seconds, setSeconds] = useState(startTimerSecs);
   const [displayMessage, setDisplayMessage] = useState(false);
   const [play, pause] = useState(false);
+  const [disable, setDisable] = useState(false);
 
   useEffect(() => {
     if (play) {
@@ -16,8 +21,8 @@ function Pomodoro() {
             setSeconds(59);
             setMinutes(minutes - 1);
           } else {
-            let minutes = displayMessage ? 0 : 0;
-            let seconds = 5;
+            let minutes = displayMessage ? startTimerMins : startBreakMins;
+            let seconds = displayMessage ? startTimerSecs : startBreakSecs;
             setSeconds(seconds);
             setMinutes(minutes);
             setDisplayMessage(!displayMessage);
@@ -28,6 +33,7 @@ function Pomodoro() {
       }, 1000);
     }
   }, [seconds, play]);
+
   const timerMinutes = minutes < 10 ? `0${minutes}` : minutes;
   const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
 
@@ -46,7 +52,13 @@ function Pomodoro() {
         </div>
       </div>
       <div className="playPauseButtons">
-        <button className="start-button" onClick={() => pause(!play)}>
+        <button
+          className="playPause"
+          onClick={() => {
+            pause(!play);
+            setDisable(false);
+          }}
+        >
           Play | Pause
         </button>
       </div>
