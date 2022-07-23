@@ -1,13 +1,13 @@
 [{
 	"id": 1,
-	"task": "read A",
-	"complete": true
+	"task": "You have started reading for today!",
+	"complete": false
   }, {
 	"id": 2,
-	"task": "read B",
-	"complete": true
+	"task": "Your reading process is tracked along the map",
+	"complete": false
   }, {
 	"id": 3,
-	"task": "Goals for today",
-	"complete": false
+	"task": "set your goals underneath",
+	"complete": true
   }]

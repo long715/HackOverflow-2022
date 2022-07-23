@@ -15,7 +15,22 @@ body {
   .todo {
 	cursor: pointer;
   }
+  
   .strike {
 	text-decoration: line-through;
+  }
+
+  /* .to-do:complete{
+    background-color: black;
+    cursor: pointer;
+    text-decoration: line-through;
+  } */ */
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    flex-basis: 22rem;
+    padding: 1rem;
   }
   
