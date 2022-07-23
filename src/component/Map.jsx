@@ -1,4 +1,4 @@
-function map(){
+function Map(){
     return(
         <div>
             <img src="" alt="map image" />
@@ -8,4 +8,4 @@ function map(){
 
 }
 
-export default map;
+export default Map;
