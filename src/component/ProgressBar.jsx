@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const ProgressBar = ({ value, max }) => {
     return (
-        <progress value={value} max={max} />
+        <progress className="w-full" value={value} max={max} />
     )
 };
 
