@@ -1,7 +1,6 @@
 import React from 'react';
-import checklistStyle from './checklistStyle.css';
 
-//each row in out todo list 
+//one single row in our To Do List
 const ToDo = ({todo, handleToggle}) => {
 
     const handleClick = (e) => {
@@ -10,7 +9,7 @@ const ToDo = ({todo, handleToggle}) => {
     }
 
     return (
-        <div id={todo.id} key={todo.id + todo.task} name="todo" value={todo.id} onClick={handleClick} className= {("todo text-black ") + (todo.complete ? "line-through" : "")}>
+        <div id={todo.id} key={todo.id + todo.task} name="todo" value={todo.id} onClick={handleClick} className={todo.complete ? "todo strike" : "todo"}>
             {todo.task}
         </div>
     );

@@ -1,5 +1,5 @@
 body {
-	margin: 5 auto;
+	margin: 0 auto;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 	  sans-serif;
@@ -11,12 +11,11 @@ body {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 	  monospace;
   }
-
-  .checkList{
-	display: flex;
-	flex-direction: column;
-	background-color: aliceblue;
-	flex-basis: 22rem;
-	padding: 1rem;
+  
+  .todo {
+	cursor: pointer;
   }
-
+  .strike {
+	text-decoration: line-through;
+  }
+  

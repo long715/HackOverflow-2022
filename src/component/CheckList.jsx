@@ -5,7 +5,6 @@ import data from "./CheckList/Data.json";
 import Header from "./CheckList/Header.jsx";
 import ToDoList from "./CheckList/ToDoList";
 import ToDoForm from './CheckList/ToDoForm';
-import checklistStyle from "./CheckList/checklistStyle.css"
 
 function CheckList() {
   
@@ -32,8 +31,8 @@ function CheckList() {
   }
 
   return (
-    <div className="checkList">
-      <Header  />
+    <div className="CheckList">
+      <Header />
       <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
       <ToDoForm addTask={addTask}/>
     </div>
