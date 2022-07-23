@@ -1,25 +1,27 @@
+
 import ProgressBar from "./component/ProgressBar";
 import CheckList from "./component/CheckList";
 import Ghost from "./resources/images/ghost.png";
 import Pdf from "./component/Pdf"
 import Dropzone from "./component/Dropzone"
+import Character from "./resources/images/download.jpg";
+import React, {useState} from 'react';
 
 function App() {
+  const [onPage, setOnPage] = useState(false);
+
   return (
-    <div className="App">
-      <header className="">
-        <p>
-          hellooom
-        </p>
-        <div className ="owl-navigation">
-          <button>Map</button>
-          <img src={Ghost} alt="this is an image"/>
+    <div className="bg-linen h-screen w-screen">
+      <div className ="flex justify-center items-center">
+        <button className={`bg-white ${onPage? "block":"hidden"}`}>Map</button>
+        <div onClick={()=> setOnPage(!onPage)}>
+          <img src={Character} alt="this is an image" className="cursor-pointer"/>
         </div>
         <ProgressBar/>
         <CheckList/>
         <Pdf/>
         <Dropzone/>
-      </header>
+      </div>
     </div>
   );
 }
