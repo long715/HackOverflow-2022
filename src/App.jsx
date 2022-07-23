@@ -1,20 +1,20 @@
 import ProgressBar from "./component/ProgressBar";
 import CheckList from "./component/CheckList";
-import Ghost from "./resources/images/ghost.png";
+import Pomodoro from "./component/Pomodoro";
+// import Ghost from "./resources/images/ghost.png";
 
 function App() {
   return (
     <div className="App">
       <header className="">
-        <p>
-          hellooom
-        </p>
-        <div className ="owl-navigation">
+        <p>hellooom</p>
+        <div className="owl-navigation">
           <button>Map</button>
-          <img src={Ghost} alt="this is an image"/>
+          {/* <img src={Ghost} alt="this is an image"/> */}
         </div>
-        <ProgressBar/>
-        <CheckList/>
+        <Pomodoro />
+        <ProgressBar />
+        <CheckList />
       </header>
     </div>
   );
