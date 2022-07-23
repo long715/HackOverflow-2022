@@ -1,13 +1,13 @@
 [{
 	"id": 1,
-	"task": "read A",
+	"task": "You have started reading for today!",
 	"complete": true
   }, {
 	"id": 2,
-	"task": "read B",
+	"task": "Your reading process is tracked along the progress bar",
 	"complete": true
   }, {
 	"id": 3,
-	"task": "Goals for today",
+	"task": "set your goals underneath :)",
 	"complete": false
   }]

@@ -11,6 +11,14 @@ body {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 	  monospace;
   }
+
+  .checkList{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(205, 214, 185);
+    flex-basis: 22rem;
+    padding: 1rem;
+  }
   
   .todo {
 	cursor: pointer;
