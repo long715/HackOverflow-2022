@@ -1,19 +1,7 @@
-import React from "react";
-import PropTypes from 'prop-types';
-
-const ProgressBar = ({ value, max }) => {
+function ProgressBar(){
     return (
-        <progress className="w-full" value={value} max={max} />
-    )
-};
-
-ProgressBar.propTypes = {
-    value: PropTypes.number.isRequired,
-    max: PropTypes.number,
+        <div>progress bar</div>
+    );
 }
 
-ProgressBar.defaultProps = {
-    max: 100,
-}
-
-export default ProgressBar;
+export default ProgressBar; 
