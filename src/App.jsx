@@ -1,3 +1,6 @@
+
+import Pdf from "./component/Pdf"
+import Dropzone from "./component/Dropzone"
 import Character from "./resources/images/owl.gif";
 import React, {useState} from 'react';
 
@@ -11,7 +14,9 @@ function App() {
         <div className="w-32 h-32" onClick={()=> setOnPage(!onPage)}>
           <img src={Character} alt="this is an image" className="cursor-pointer"/>
         </div>
+
         <button className={`bg-white ${onPage? "block":"hidden"} w-24 h-24 bg-[#CCEBE7] border-[#511414] border-2`}>+1 Chapter</button>
+
       </div>
     </div>
   );
