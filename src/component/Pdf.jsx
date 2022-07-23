@@ -61,6 +61,7 @@ export function Pdf() {
     }
     return (
         <div className='container'>
+            <h1 className='title'>Drop Your Reading Here!</h1>
             <form className='form-group' onSubmit={handlePdfFileSubmit}>
                 <input type="file" className='form-control'required onChange={handlePdfFileChange}/>
                 {pdfFileError&&<div className='error-msg'>{pdfFileError}</div>}
