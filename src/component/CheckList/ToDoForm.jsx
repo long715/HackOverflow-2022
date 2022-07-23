@@ -14,7 +14,7 @@ const ToDoForm = ({ addTask }) => {
         setUserInput("");
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="text-gray-800">
             <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..."/>
             <button>Submit</button>
         </form>

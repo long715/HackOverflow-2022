@@ -5,6 +5,9 @@ body {
 	  sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  }
+
+  text{
 	text-decoration-color: white;
   }
   
@@ -15,8 +18,9 @@ body {
 
   .todo {
 	cursor: pointer;
-	text-decoration-color: white;
+
   }
+
 
   .strike {
 	text-decoration: line-through;

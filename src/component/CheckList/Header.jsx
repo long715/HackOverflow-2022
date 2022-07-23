@@ -1,5 +1,6 @@
 import React from 'react';
 
+//where should I add text-xl
 const Header = () => {
     return (
         <header>
