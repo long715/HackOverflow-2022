@@ -1,6 +1,8 @@
 import ProgressBar from "./component/ProgressBar";
 import CheckList from "./component/CheckList";
 import Ghost from "./resources/images/ghost.png";
+import Pdf from "./component/Pdf"
+import Dropzone from "./component/Dropzone"
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         </div>
         <ProgressBar/>
         <CheckList/>
+        <Pdf/>
+        <Dropzone/>
       </header>
     </div>
   );
