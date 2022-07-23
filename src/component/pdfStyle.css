@@ -1,0 +1,17 @@
+.container{
+    background-color: aliceblue;
+    padding: 2%;
+    height: 80vh;
+    margin: 10vh 0;
+    overflow-y:scroll;
+}
+
+.form-group{
+    margin: 1%;;
+}
+
+.pdf-container{
+    background-color: antiquewhite;
+    height: 60vh;
+    
+}
