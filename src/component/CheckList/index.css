@@ -5,16 +5,19 @@ body {
 	  sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	text-decoration-color: white;
   }
   
   code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 	  monospace;
   }
-  
+
   .todo {
 	cursor: pointer;
+	text-decoration-color: white;
   }
+
   .strike {
 	text-decoration: line-through;
   }

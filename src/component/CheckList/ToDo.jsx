@@ -1,6 +1,6 @@
 import React from 'react';
 
-//one single row in our To Do List
+//one row in out todo list 
 const ToDo = ({todo, handleToggle}) => {
 
     const handleClick = (e) => {

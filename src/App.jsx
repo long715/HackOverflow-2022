@@ -1,5 +1,7 @@
 import Character from "./resources/images/owl.gif";
+
 import React, {useState} from 'react';
+import CheckList from "./component/CheckList";
 
 function App() {
   const [onPage, setOnPage] = useState(false);
@@ -11,6 +13,7 @@ function App() {
         <div className="w-32 h-32" onClick={()=> setOnPage(!onPage)}>
           <img src={Character} alt="this is an image" className="cursor-pointer"/>
         </div>
+        <CheckList/>
       </div>
     </div>
   );

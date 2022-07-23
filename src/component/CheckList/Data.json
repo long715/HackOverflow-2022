@@ -1,13 +1,13 @@
 [{
 	"id": 1,
-	"task": "read A",
+	"task": "defalt read A",
 	"complete": true
   }, {
 	"id": 2,
-	"task": "read B",
+	"task": "defalt read B",
 	"complete": true
   }, {
 	"id": 3,
-	"task": "Goals for today",
-	"complete": false
+	"task": "defalt read C",
+	"complete": true
   }]
