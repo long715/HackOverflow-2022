@@ -42,7 +42,7 @@ function Pomodoro() {
       )}
       <div className="timerContainer">
         <div className="timer">
-          {timerMinutes}: {timerSeconds}
+          {timerMinutes}:{timerSeconds}
         </div>
       </div>
       <div className="playPauseButtons">
