@@ -16,7 +16,8 @@ function App() {
         </div>
 
         <button className={`bg-white ${onPage? "block":"hidden"} w-24 h-24 bg-[#CCEBE7] border-[#511414] border-2`}>+1 Chapter</button>
-
+        <Dropzone/>
+        <Pdf/>
       </div>
     </div>
   );
