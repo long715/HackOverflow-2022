@@ -1,22 +1,21 @@
+
 import ProgressBar from "./component/ProgressBar";
 import CheckList from "./component/CheckList";
 import Pomodoro from "./component/Pomodoro";
-// import Ghost from "./resources/images/ghost.png";
+import React, {useState} from 'react';
+import ReadingStatus from "./component/ReadingStatus";
+import Notebook from "./component/Notebook";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="">
-        <p>hellooom</p>
-        <div className="owl-navigation">
-          <button>Map</button>
-          {/* <img src={Ghost} alt="this is an image"/> */}
-        </div>
-        <Pomodoro />
-        <ProgressBar />
-        <CheckList />
-      </header>
+
+    <div className={`bg-[url('/public/img/static-bg.png')] h-screen w-screen`}>
+      <ReadingStatus/>
+      <Notebook/>
+      <Pomodoro />
     </div>
+
   );
 }
 
