@@ -32,7 +32,7 @@ function CheckList() {
 
   return (
     <div className="CheckList">
-      <Header />
+      <Header  />
       <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
       <ToDoForm addTask={addTask}/>
     </div>
