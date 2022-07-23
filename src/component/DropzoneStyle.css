@@ -1,0 +1,16 @@
+.text-center{
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed black;
+    padding: 5rem 1rem;
+    width: 80%;
+    height: 80%;
+    background-color: aliceblue;
+    border-radius: 1rem;
+
+}
+
+.text-center:hover{
+    cursor: pointer;
+    background-color: rgb(214, 248, 248);
+}
