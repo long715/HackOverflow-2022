@@ -12,7 +12,9 @@ function App() {
     <div className={`bg-[url('/public/img/static-bg.png')] h-screen w-screen`}>
       <ReadingStatus readingState = {state}/>
       <Notebook onPageChange={setState}/>
+
       <Pomodoro/>
+      <CheckList/>
     </div>
   );
 }
