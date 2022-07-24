@@ -35,7 +35,7 @@ function CheckList() {
   return (
     
 
-<div className='h-[55%] w-screen'>
+<div className=' w-screen'>
             
 <button className='absolute bg-[#94C6C9] h-36 w-32 left-0 bottom-0 border-2 border-[#511414] rounded-sm' onClick={()=> setShow(true)}> </button>
 <div className={`flex absolute inset-0 bg-black bg-opacity-60 justify-center items-center ${show? "block":"hidden"}`}>
