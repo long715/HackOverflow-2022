@@ -11,9 +11,8 @@ function App() {
   return (
     <div className={`bg-[url('/public/img/static-bg.png')] h-screen w-screen`}>
       <ReadingStatus readingState = {state}/>
-      <Notebook onPageChange={setState}/>
-
       <Pomodoro/>
+      <Notebook onPageChange={setState}/>
       <CheckList/>
     </div>
   );

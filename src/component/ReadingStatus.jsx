@@ -28,7 +28,7 @@ function ReadingStatus(props){
                 </div>
                 <div className="w-78 h-2/5 bottom-0 bg-[#94C6C9]">
 
-                    <p className="ml-2 text-[#573E3E] text-lg">Progress: {Math.floor(pageNum*100/MAX)}%</p>
+                    <p className="ml-2 text-[#573E3E] text-lg">Progress: {Math.ceil(pageNum*100/MAX)}%</p>
                     <div className="flex flex-row h-4 m-2 mt-0">
                         <div className={`h-4 bg-[#795B5B] duration-100`} style={{flexGrow: pageNum}}></div>
                         <div className={`h-4 bg-[#EDE5E5]`} style={{flexGrow: MAX-pageNum}}></div>
