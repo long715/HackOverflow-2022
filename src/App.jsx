@@ -1,6 +1,6 @@
 import CheckList from "./component/CheckList";
 import Pomodoro from "./component/Pomodoro";
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import ReadingStatus from "./component/ReadingStatus";
 import Notebook from "./component/Notebook";
 
@@ -13,7 +13,6 @@ function App() {
       <Notebook onPageChange={setState}/>
 
     </div>
-
   );
 }
 

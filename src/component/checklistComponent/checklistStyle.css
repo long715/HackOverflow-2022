@@ -12,18 +12,26 @@ body {
 	  monospace;
   }
 
+  h1{
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
   .checkList{
     display: flex;
     flex-direction: column;
-    background-color: rgb(205, 214, 185);
+    background-color: rgb(214, 232, 233);
     flex-basis: 22rem;
     padding: 1rem;
+    margin: 5%;
+    height: 90%;
   }
-  
+
   .todo {
-	cursor: pointer;
+	  cursor: pointer;
   }
+
   .strike {
-	text-decoration: line-through;
+	  text-decoration: line-through;
   }
   
