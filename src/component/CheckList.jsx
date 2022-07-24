@@ -38,19 +38,19 @@ function CheckList() {
 <div className=' w-screen'>
             
 <button className='absolute bg-[#94C6C9] h-36 w-32 left-0 bottom-0 border-2 border-[#511414] rounded-sm' onClick={()=> setShow(true)}> </button>
-<div className={`flex absolute inset-0 bg-black bg-opacity-60 justify-center items-center ${show? "block":"hidden"}`}>
-    <div className="bg-[#94C6C9] w-3/5 h-5/6">
-        <button className='float-right mr-2 font-bold' onClick={()=>setShow(false)}>x</button>
-        <div className="checkList">
-      <header class ='text-xl'>
-        <h1>Goals for Today </h1>
-      </header>
-      <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
-      <ToDoForm addTask={addTask}/>
-    </div>
-    </div>
-    
-</div>
+  <div className={`flex absolute inset-0 bg-black bg-opacity-60 justify-center items-center ${show? "block":"hidden"}`}>
+      <div className="bg-[#94C6C9] w-3/5 h-5/6">
+          <button className='float-right mr-2 font-bold' onClick={()=>setShow(false)}>x</button>
+          <div className="checkList">
+        <header class ='text-xl'>
+          <h1>Goals for Today </h1>
+        </header>
+        <ToDoList toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
+        <ToDoForm addTask={addTask}/>
+      </div>
+      </div>
+      
+  </div>
 </div>
 );
 }

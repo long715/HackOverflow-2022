@@ -1,6 +1,6 @@
 import React from 'react';
 import ToDo from './ToDo';
-import './checklistStyle.css'
+import checklistStyle from './checklistStyle.css'
 
 //the container that holds all of todos
 const ToDoList = ({toDoList, handleToggle, handleFilter}) => {
@@ -8,13 +8,10 @@ const ToDoList = ({toDoList, handleToggle, handleFilter}) => {
         <div>
             {toDoList.map(todo => {
                 return (
-                    <ul>
-                        <ToDo todo={todo} handleToggle={handleToggle} handleFilter={handleFilter}/>
-                    </ul>
-                    
+                    <ToDo todo={todo} handleToggle={handleToggle} handleFilter={handleFilter}/>
                 )
             })}
-            <button style={{margin: '4px'}} onClick={handleFilter}>Clear Completed</button>
+            <button className='clearBtn' style={{margin: '4px'}} onClick={handleFilter}>Clear Completed</button>
         </div>
     );
 };

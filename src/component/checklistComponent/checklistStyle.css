@@ -25,6 +25,7 @@ body {
     padding: 1rem;
     margin: 5%;
     height: 90%;
+    overflow-y: auto;
   }
 
   .todo {
@@ -35,3 +36,33 @@ body {
 	  text-decoration: line-through;
   }
   
+  .form{
+    bottom: 5%;
+  }
+
+  .submitBtn, .clearBtn{
+    border: 1px solid #3F0D0D;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    margin-left: 1rem;
+    background-color: #94C6C9;
+    
+  }
+
+  .submitBtn:hover{
+    background-color: #b3d9db;
+  }
+
+  input{
+    padding: 0.3rem;
+  }
+
+  .submitForm{
+    position: absolute;
+    bottom: 15%;
+  }
+
+  .todo{
+    padding-left: 0.5rem;
+  }
+
