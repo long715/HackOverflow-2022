@@ -1,10 +1,9 @@
 //code adapted from https://codesandbox.io/s/todo-list-hooks-ebfgw?file=/src/App.js
 
 import React, { useState } from 'react';
-import data from "./checklistComponent/Data.json";
-import ToDoList from "./checklistComponent/ToDoList";
-import ToDoForm from './checklistComponent/ToDoForm';
-import checklistStyle from './checklistComponent/checklistStyle.css'
+import data from "./Data.json";
+import ToDoList from "./ToDoList";
+import ToDoForm from './ToDoForm';
 
 function CheckList() {
 

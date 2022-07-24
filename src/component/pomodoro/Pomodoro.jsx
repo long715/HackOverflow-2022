@@ -3,9 +3,10 @@ import pomodoroStyle from "./pomodoro.css";
 
 function Pomodoro() {
   const startTimerMins = 0;
-  const startTimerSecs = 5;
+  const startTimerSecs = 10;
   const startBreakMins = 0;
-  const startBreakSecs = 3;
+  const startBreakSecs = 5;
+
   const [minutes, setMinutes] = useState(startTimerMins);
   const [seconds, setSeconds] = useState(startTimerSecs);
   const [displayMessage, setDisplayMessage] = useState(false);
