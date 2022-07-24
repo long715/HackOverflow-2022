@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import checklistStyle from './checklistStyle.css'
 
 const ToDoForm = ({ addTask }) => {
 
@@ -14,9 +15,9 @@ const ToDoForm = ({ addTask }) => {
         setUserInput("");
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='submitForm'>
             <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..."/>
-            <button>Submit</button>
+            <button className='submitBtn'>Submit</button>
         </form>
     );
 };
