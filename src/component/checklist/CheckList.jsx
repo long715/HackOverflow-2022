@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import data from "./Data.json";
 import ToDoList from "./ToDoList";
 import ToDoForm from './ToDoForm';
+import CheckPic from "../../resources/images/to-do-list.png";
 
 function CheckList() {
 
@@ -36,7 +37,8 @@ function CheckList() {
 
 <div className=' w-screen'>
             
-<button className='absolute bg-[#94C6C9] h-12 w-40 left-2 bottom-2 border-2 border-[#511414] rounded-sm font-bold text-[#3F0D0D]' onClick={()=> setShow(true)}> 
+<button className='absolute flex flex-col text-center items-center justify-center space-y-2 bg-[#94C6C9] h-32 w-28 left-2 bottom-2 border-2 border-[#511414] rounded-sm font-bold text-[#3F0D0D]' onClick={()=> setShow(true)}> 
+    <img className='w-16 h-16' src={CheckPic}/>
     <p>Checklist</p>
 </button>
   <div className={`flex absolute inset-0 bg-black bg-opacity-60 justify-center items-center ${show? "block":"hidden"}`}>

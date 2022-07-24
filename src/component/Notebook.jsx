@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import NotePic from "../resources/images/notebook.png";
-import Pdf from "./Pdf"
+import Pdf from "./pdf/Pdf"
 
 function Notebook(props){
     const [show,setShow] = useState(false);
