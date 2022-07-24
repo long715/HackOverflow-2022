@@ -1,8 +1,26 @@
+.title{
+    font-size: 2rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: 0.1rem 0.2rem;
+    background-color: #c6e4e6;
+    border: 1px solid #573E3E;
+    border-radius: 0.2rem;
+}
+
+.btn:hover{
+
+}
+
 .container{
     background-color: aliceblue;
     padding: 2%;
     height: 80vh;
-    margin: 10vh 0;
+    margin: 5% 2%;
+    width: 96%;
+    height: 90%;
     overflow-y:scroll;
 }
 
@@ -11,7 +29,7 @@
 }
 
 .pdf-container{
-    background-color: antiquewhite;
+    background-color: #CCEBE7;
     height: 60vh;
     
 }

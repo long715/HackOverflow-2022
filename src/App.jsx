@@ -1,5 +1,3 @@
-
-import ProgressBar from "./component/ProgressBar";
 import CheckList from "./component/CheckList";
 import Pomodoro from "./component/Pomodoro";
 import React, {useState} from 'react';
@@ -12,7 +10,10 @@ function App() {
 
     <div className={`bg-[url('/public/img/static-bg.png')] h-screen w-screen`}>
       <ReadingStatus/>
+      <CheckList/>
+      <Pomodoro />
       <Notebook/>
+
     </div>
 
   );
