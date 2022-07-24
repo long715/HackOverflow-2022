@@ -1,11 +1,14 @@
 import Character from "../resources/images/flying-owl-apng.png";
 import React, {useState} from 'react';
-import ProgressBar from "./ProgressBar";
 
-function ReadingStatus(){
-    const MAX =10; 
+function ReadingStatus(props){
+    const MAX = props?.readingState?.doc?._pdfInfo?.numPages ?? 10; 
     const [onPage, setOnPage] = useState(false);
-    const [count, setCount] = useState(0); 
+    const [count, setCount] = useState(0);
+
+    const pageNum = props?.readingState?.currentPage; 
+    
+    console.log({currentPage: props?.readingState?.currentPage, max: MAX})
     return(
         <div className="">
 
@@ -17,21 +20,21 @@ function ReadingStatus(){
                 </div>
                 <div className="w-78 h-2/5 bottom-0 bg-[#94C6C9]">
 
-                    <p className="ml-2 text-[#573E3E] text-lg">Progress: {count*100/MAX}%</p>
+                    <p className="ml-2 text-[#573E3E] text-lg">Progress: {Math.floor(pageNum*100/MAX)}%</p>
                     <div className="flex flex-row h-4 m-2 mt-0">
-                        <div className={`h-4 bg-[#795B5B] duration-100`} style={{flexGrow: count}}></div>
-                        <div className={`h-4 bg-[#EDE5E5]`} style={{flexGrow: MAX-count}}></div>
+                        <div className={`h-4 bg-[#795B5B] duration-100`} style={{flexGrow: pageNum}}></div>
+                        <div className={`h-4 bg-[#EDE5E5]`} style={{flexGrow: MAX-pageNum}}></div>
                     </div>
                 </div>
                 
             </div>
 
             <div className ="flex flex-row justify-center items-center text-[#573E3E] h-screen w-screen">
-                    <button className={`bg-[#CCEBE7] ${onPage? "block":"hidden"} w-24 h-24 bg-[#CCEBE7] border-[#511414] border-2 rounded-md hover:bg-[#94C6C9]`} onClick={()=>setCount(count-1)} disabled={count<=0? true:false}>Previous Chapter</button>
+                    
                     <div className="w-40 h-40" onClick={()=> setOnPage(!onPage)}>
-                        <img src={Character} alt="this is an image" className="cursor-pointer"/>
+                        <img src={Character} alt="this is an image" className=""/>
                     </div>
-                    <button className={`bg-[#CCEBE7] ${onPage? "block":"hidden"} w-24 h-24 bg-[#CCEBE7] border-[#511414] border-2 rounded-md hover:bg-[#94C6C9]`} onClick={()=>setCount(count+1)} disabled={count>=MAX? true:false}>Next Chapter</button>
+                   
             </div>
         </div>
     );

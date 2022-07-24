@@ -5,12 +5,13 @@ import ReadingStatus from "./component/ReadingStatus";
 import Notebook from "./component/Notebook";
 
 function App() {
+  const [state,setState] = useState();
+
   return (
     <div className={`bg-[url('/public/img/static-bg.png')] h-screen w-screen`}>
-      <ReadingStatus />
-      <CheckList />
-      <Pomodoro />
-      <Notebook />
+      <ReadingStatus readingState = {state}/>
+      <Notebook onPageChange={setState}/>
+
     </div>
   );
 }

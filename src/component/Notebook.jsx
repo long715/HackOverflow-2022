@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import NotePic from "../resources/images/notebook.png";
 import Pdf from "./Pdf"
 
-function Notebook(){
+function Notebook(props){
     const [show,setShow] = useState(false);
     return(
         <div className=' w-screen'>
@@ -14,7 +14,7 @@ function Notebook(){
             <div className={`flex absolute inset-0 bg-black bg-opacity-60 justify-center items-center ${show? "block":"hidden"}`}>
                 <div className="bg-[#94C6C9] w-3/5 h-5/6">
                     <button className='float-right mr-2 font-bold' onClick={()=>setShow(false)}>x</button>
-                    <Pdf/>
+                    <Pdf onPageChange={props.onPageChange}/>
                 </div>
 
             </div>

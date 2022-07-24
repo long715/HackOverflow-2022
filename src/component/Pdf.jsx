@@ -14,9 +14,9 @@ import pdfStyle from './pdfStyle.css'
 const url = 
 "https://cors-anywhere.herokuapp.com/http://www.pdf995.com/samples/pdf.pdf"
   
-export function Pdf() {
+export function Pdf(props) {
 
-    
+
   // Create new plugin instance
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
@@ -42,7 +42,7 @@ export function Pdf() {
                 }
             }else{
                 setPdfFile(null);
-                setPdfFileError('Please input valild file ')
+                setPdfFileError('Please input valid file ')
             }
         }else{
             console.log('Select your file')
@@ -74,7 +74,10 @@ export function Pdf() {
             <p>View PDF</p>
             <div className='pdf-container'>
                 {viewPdf&&<><Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-                <Viewer fileUrl={viewPdf}
+                <Viewer fileUrl={viewPdf} onPageChange={(args) => {
+                    console.log(args)
+                    props.onPageChange(args)
+                }}
                 plugins={[defaultLayoutPluginInstance]} />
                 </Worker></>}
 
