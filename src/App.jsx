@@ -13,7 +13,6 @@ function App() {
     <div className={`bg-[url('/public/img/static-bg.png')] h-screen w-screen`}>
       <ReadingStatus/>
       <Notebook/>
-      <Pomodoro />
     </div>
 
   );
